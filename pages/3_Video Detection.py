@@ -1,16 +1,10 @@
 import logging
-import queue
 from pathlib import Path
 from typing import List, NamedTuple
-
-import moviepy.editor as mpy
-from ffmpy import FFmpeg
-import subprocess
 
 import cv2
 import numpy as np
 import streamlit as st
-from streamlit_webrtc import WebRtcMode, webrtc_streamer
 
 # Deep learning framework
 from ultralytics import YOLO
