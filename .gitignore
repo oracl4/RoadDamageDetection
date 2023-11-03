@@ -1,0 +1,104 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+__pycache__/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+htmlcov/
+
+# IDE files
+.idea/
+.vscode/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyd
+*.so
+
+# Logs and databases
+*.log
+*.sqlite
+*.sql
+*.log.*
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Icon?
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+ehthumbs.db
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS
+.AppleDouble
+.DS_Store
+
+# Windows
+$RECYCLE.BIN/
+Thumbs.db
+Desktop.ini
+
+# Linux
+lost+found/
