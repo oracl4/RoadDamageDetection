@@ -2,7 +2,6 @@ av==10.0.0
 numpy==1.24.3
 opencv_python==4.8.0.74
 Pillow==9.5.0
-Pillow==10.1.0
 streamlit==1.28.0
 streamlit-webrtc==0.47.1
 torch==2.0.0

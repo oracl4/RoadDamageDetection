@@ -1,3 +1,4 @@
+import os
 import logging
 from pathlib import Path
 from typing import NamedTuple
@@ -8,7 +9,6 @@ import streamlit as st
 
 # Deep learning framework
 from ultralytics import YOLO
-
 from PIL import Image
 from io import BytesIO
 
@@ -26,8 +26,9 @@ ROOT = HERE.parent
 
 logger = logging.getLogger(__name__)
 
-MODEL_URL = ""  # noqa: E501
-MODEL_LOCAL_PATH = "./models/YOLOv8_Small_RDD.pt"
+MODEL_URL = "https://github.com/oracl4/RoadDamageDetection/raw/main/models/YOLOv8_Small_RDD.pt"  # noqa: E501
+MODEL_LOCAL_PATH = ROOT / "./models/YOLOv8_Small_RDD.pt"
+download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=89569358)
 
 # Session-specific caching
 # Load the model
