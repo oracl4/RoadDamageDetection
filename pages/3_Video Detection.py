@@ -1,3 +1,4 @@
+import os
 import logging
 from pathlib import Path
 from typing import List, NamedTuple
@@ -48,6 +49,10 @@ class Detection(NamedTuple):
     label: str
     score: float
     box: np.ndarray
+
+# Create temporary folder if doesn't exists
+if not os.path.exists('./temp'):
+   os.makedirs('./temp')
 
 temp_file_input = "./temp/video_input.mp4"
 temp_file_infer = "./temp/video_infer.mp4"
