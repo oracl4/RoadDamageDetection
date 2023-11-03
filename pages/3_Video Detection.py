@@ -151,10 +151,6 @@ def processVideo(video_file, score_threshold):
 
                 _frame_counter = _frame_counter + 1
                 inferenceBar.progress(_frame_counter/_frame_count, text=inferenceBarText)
-
-                # Debugging
-                if _frame_counter == 100:
-                    break
             
             # Break the loop
             else:
