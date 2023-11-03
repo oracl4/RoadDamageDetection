@@ -6,3 +6,4 @@ streamlit-webrtc==0.47.1
 torch==2.0.0
 ultralytics==8.0.201
 opencv-python-headless==4.8.0.74
+requests==2.28.2

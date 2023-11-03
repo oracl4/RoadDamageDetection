@@ -13,6 +13,7 @@ from streamlit_webrtc import WebRtcMode, webrtc_streamer
 from ultralytics import YOLO
 
 from sample_utils.download import download_file
+from sample_utils.get_STUNServer import getSTUNServer
 
 st.set_page_config(
     page_title="Realtime Detection",
@@ -31,7 +32,8 @@ MODEL_LOCAL_PATH = ROOT / "./models/YOLOv8_Small_RDD.pt"
 download_file(MODEL_URL, MODEL_LOCAL_PATH, expected_size=89569358)
 
 # STUN Server
-STUN_SERVER = [{"urls": ["stun:stun2.l.google.com:19302"]}]
+STUN_STRING = "stun:" + str(getSTUNServer())
+STUN_SERVER = [{"urls": [STUN_STRING]}]
 
 # Session-specific caching
 # Load the model

@@ -1,0 +1,15 @@
+# Dataset Path
+path: rddJapanIndiaFiltered
+train:
+- Japan/images/train
+- India/images/train
+val:
+- Japan/images/val
+- India/images/val
+
+# Class Names List
+names:
+  0: Longitudinal Crack
+  1: Transverse Crack
+  2: Alligator Crack
+  3: Potholes

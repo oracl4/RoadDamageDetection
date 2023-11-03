@@ -102,3 +102,11 @@ Desktop.ini
 
 # Linux
 lost+found/
+
+# RDD
+temp/*
+training/dataset/rddJapanIndiaFiltered/India/*
+training/dataset/rddJapanIndiaFiltered/Japan/*
+!training/dataset/rddJapanIndiaFiltered/rdd_JapanIndia.yaml
+training/runs/
+training/wandb/
